@@ -4396,7 +4396,7 @@ BattleCommand_StatDown:
 	jr nz, .GotAmountToLower
 	inc b
 
-GotAmountToLower:
+.GotAmountToLower:
 	call CheckSubstituteOpp
 	jr nz, .Failed
 
